@@ -214,7 +214,7 @@ html.no-js .no-js-hidden {
 }
 
 .spaced-section {
-    margin-top: 5rem;
+    margin-top: 5px !important;
 }
 
 .spaced-section:last-child {
@@ -352,7 +352,7 @@ h5,
 .h1,
 .h2,
 .h3,
-.h4,
+
 .h5 {
     font-family: var(--font-heading-family);
     font-style: var(--font-heading-style);
@@ -412,8 +412,9 @@ h4,
 .h4 {
     font-family: var(--font-heading-family);
     font-style: var(--font-heading-style);
-    font-size: calc(var(--font-heading-scale) * 1.5rem);
-}
+    font-size: 20px;
+      font-weight: 500;
+      }
 
 h5,
 .h5 {
@@ -1111,7 +1112,7 @@ summary::-webkit-details-marker {
     position: absolute;
     top: 0;
     left: 0;
-    height: 70%;
+    height: 100%;
     width: 100%;
     object-fit: contain;
 }
@@ -1167,6 +1168,11 @@ deferred-media {
 
 /* Button - default */
 
+  
+  .p, p {
+  color: white !important;
+  }
+  
 .button,
 .shopify-challenge__button,
 .customer button {
@@ -1677,13 +1683,17 @@ input[type='checkbox'] {
     font-size: 20px;
     font-weight: 700;
     border: 0;
-    background-color: transparent;
+    background-color: #131313;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #60cc65;
-    padding: 0;
+    padding: 0;    
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .quantity__button svg {
@@ -1871,7 +1881,9 @@ input[type='checkbox'] {
 .header-wrapper {
     display: block;
     position: relative;
+  	max-height: 62px;
     background-color: rgb(var(--color-background));
+    
 }
 
 .header-wrapper--border-bottom {
@@ -2338,3 +2350,14 @@ details-disclosure>details {
         stroke: CanvasText;
     }
 }
+  
+  
+  .jdgm-preview-badge .jdgm-star {
+    color: rgb(242, 192, 84) !important;
+}
+  
+  
+  
+  .jdgm-revs-tab-btn[position=left] {
+  display: none !important;
+  }
