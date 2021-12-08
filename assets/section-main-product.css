@@ -185,8 +185,9 @@ fieldset.product-form__input .form__label {
 }
 
 .product-form__input input[type='radio']:checked+label {
-    background-color: rgb(var(--color-foreground));
-    color: rgb(var(--color-background));
+    background-color: #1f1f1f;
+    color: white;
+    border: 3px solid #60c655;
 }
 
 @media screen and (forced-colors: active) {
@@ -240,6 +241,8 @@ fieldset.product-form__input .form__label {
     font-size: 32px;
     font-weight: 700;
     color: white;
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
 }
 
 .no-js .product-form__submit.button--secondary {
@@ -271,7 +274,7 @@ fieldset.product-form__input .form__label {
     margin-bottom: 1rem;
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0%);
-    background-color: #60C655;
+    background-color: rgb(19, 19, 19);
     padding-top: 25px;
     padding-bottom: 25px;
     padding-right: 48px;
@@ -279,6 +282,8 @@ fieldset.product-form__input .form__label {
     font-size: 32px;
     font-weight: 700;
     color: white;
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
 }
 
 
@@ -370,6 +375,7 @@ a.product__text {
 
 .product__tax {
     margin-top: -1.4rem;
+    display: none;
 }
 
 .product--no-media noscript .product-form__input,
@@ -844,6 +850,9 @@ a.product__text {
     background-color: #000;
 }
 
-.quantity__button {
-    fill: #60cc65;
+.price .price-item {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    color: #60c655;
+    font-size: 32px;
 }
